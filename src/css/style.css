@@ -89,8 +89,13 @@ header {
     background-color: var(--color-btn-primary);
     color: #fff;
     font-size: 1.6rem;
+    cursor: pointer;
+    transition: all .5s;
 }
 
+.btn:hover {
+    background-color: var(--color-secondary-upload-700);
+}
 
 @media screen and (min-width: 1024px) {
     .upload {
