@@ -1,0 +1,104 @@
+@import url('./fonts.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+:root {
+    --color-secondary-upload-100: #696969;
+    --color-secondary-upload-500: #AFCEDD;
+    --color-secondary-upload-700: #234894;
+    --color-secondary-upload-800: #1E1E1E;
+    --color-btn-primary: #219F95;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body, 
+* {
+    font-family: IRANSans;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.upload {
+    display: grid;
+    gap: 7rem;
+    grid-template-columns: 1fr;
+    font-size: 1.8rem;
+    margin-top: 5rem;
+}
+
+.upload__header {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2.5rem;
+    color: var(--color-secondary-upload-700);
+}
+
+.upload--doc span {
+    background-color: var(--color-secondary-upload-500);
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    margin-left: 1.5rem;
+}
+
+.upload--date,
+.upload--id {
+    color: var(--color-secondary-upload-100);
+    font-size: 1.3rem;
+}
+
+.upload__apply p:first-child {
+    color: var(--color-secondary-upload-800);
+    font-weight: bold;
+}
+
+.upload_about {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: var(--color-secondary-upload-800);
+    font-weight: 900;
+    margin-top: 1.5rem;
+}
+
+.upload_about img {
+    border-radius: 10px;
+}
+
+.btn {
+    outline: none;
+    border: 0;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    background-color: var(--color-btn-primary);
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .upload {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+    }
+    
+    .upload__header {
+        gap: 1rem
+    }
+
+    .btn {
+        padding: 1.2rem;
+    }
+}
