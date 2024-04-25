@@ -37,7 +37,7 @@ header {
     display: grid;
     gap: 7rem;
     grid-template-columns: 1fr;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin-top: 5rem;
 }
 
@@ -100,11 +100,11 @@ header {
 @media screen and (min-width: 1024px) {
     .upload {
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 2rem;
+        gap: 3.6rem;
     }
     
     .upload__header {
-        gap: 1.7rem
+        gap: 1.2rem
     }
 
     .btn {
