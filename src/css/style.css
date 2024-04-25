@@ -97,6 +97,13 @@ header {
     background-color: var(--color-secondary-upload-700);
 }
 
+@media screen and (min-width: 768px) {
+    .upload {
+        grid-template-columns: 1fr 1fr;
+        gap: 3.6rem;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .upload {
         grid-template-columns: 1fr 1fr 1fr;
